@@ -14,23 +14,24 @@ class App extends Component {
           type: 'line',
 
         },
-        colors: ['#546E7A', '#E91E63'],
         xaxis: {
           categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
         }
       },
       series: [{
         name: 'series-1',
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
+        data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+        color: 'red'
       },
       {
         name: 'series-2',
-        data: [40, 50, 45, 60, 59, 70, 80, 101, 135]
+        data: [40, 50, 45, 60, 59, 70, 80, 101, 135],
+        color: 'blue'
       },
       {
         name: 'series-3',
-        data: [20, 30, 35, 50, 49, 60, 80, 101, 135],
-        color: '#111'
+        data: [20, 30, 25, 40, 39, 50, 60, 81, 115],
+        color: 'green'
       }]
     }
   }
