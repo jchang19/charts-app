@@ -12,26 +12,37 @@ class App extends Component {
         chart: {
           id: 'apexchart-example',
           type: 'line',
-
+          
         },
+        // labels: ['one', 'two'],
         xaxis: {
           categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-        }
+        },
+        legend: {
+          position: 'top'
+        },
+        // colors: ["#FF1654", "#247BA0"],
+        // fill: {
+        //   type: 'gradient',
+        //   colors: ["#ff0000", "#22ff00", "#1100ff"]
+        // }
+        
       },
+
       series: [{
         name: 'series-1',
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
-        color: 'red'
+        data: [30, 40, 35, 50, 49, 60, 70, 91, 12],
+        color: '#ff0000'
       },
       {
         name: 'series-2',
         data: [40, 50, 45, 60, 59, 70, 80, 101, 135],
-        color: 'blue'
+        color: '#22ff00'
       },
       {
         name: 'series-3',
         data: [20, 30, 25, 40, 39, 50, 60, 81, 115],
-        color: 'green'
+        color: '#1100ff'
       }]
     }
   }
