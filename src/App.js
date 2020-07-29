@@ -13,16 +13,29 @@ class App extends Component {
         chart: {
           id: 'apexchart-example',
           type: 'line',
-          widthExcludeAxes: true
+          widthExcludeAxes: true,
         },
         yaxis: {
-          show: true
+          show: true,
+          labels: {
+            style: {
+              colors: 'white'
+            }
+          }
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+          labels: {
+            style: {
+              colors: 'white'
+            }
+          }
         },
         legend: {
-          position: 'top'
+          position: 'top',
+          labels: {
+            useSeriesColors: true
+          }
         },
         plotOptions: {
           bar: {
@@ -34,16 +47,29 @@ class App extends Component {
         chart: {
           id: 'apexchart-example',
           type: 'line',
-          widthExcludeAxes: false
+          widthExcludeAxes: true,
         },
         yaxis: {
-          show: true
+          show: false,
+          labels: {
+            style: {
+              colors: 'white'
+            }
+          }
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+          labels: {
+            style: {
+              colors: 'white'
+            }
+          }
         },
         legend: {
-          position: 'top'
+          position: 'top',
+          labels: {
+            useSeriesColors: true
+          }
         },
         plotOptions: {
           bar: {
@@ -67,25 +93,25 @@ class App extends Component {
         data: [20, 30, 25, 40, 39, 50, 60, 81, 115],
         color: '#1100ff'
       }],
+
       series2: [{
         name: 'series-1',
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 120],
-        color: '#ffffff'
+        data: [30, 40, 35, 50, 49, 60, 70, 91, 1200],
+        // color: '#ffffff'
       },
       {
         name: 'series-2',
         data: [40, 50, 45, 60, 59, 70, 80, 101, 135],
-        color: '#22ff00'
+        // color: '#22ff00'
       },
       {
         name: 'series-3',
         data: [20, 30, 25, 40, 39, 50, 60, 81, 115],
-        color: '#1100ff'
+        // color: '#1100ff'
       }]
     }
     
-  };
- 
+  }; 
   render() {
     return (
       <div className="App">
